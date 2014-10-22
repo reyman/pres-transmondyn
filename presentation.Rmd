@@ -1,12 +1,14 @@
 ---
-title: "presentation"
-author: "Rey; Cura"
+title: "Vers une recherche reproductible pour la simulation" 
+author: " Robin Cura ; Sébastien Rey-Coyrehourcq"
 date: "22/10/2014"
 output:
   ioslides_presentation:
     highlight: pygments
     css: slides.css
 runtime: shiny
+font-import: http://fonts.googleapis.com/css?family=Ubuntu
+font-family: Ubuntu
 bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
 csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
 widescreen: yes
@@ -14,11 +16,47 @@ widescreen: yes
 
 [//]: <> (http://stackoverflow.com/questions/3311940/r-rjava-package-install-failing)
 
-##  Crise(s)
+---
 
-blabla
+<q> Faire le point sur la <span class="red">réplication</span> des modèles de simulations dans le contexte plus large des débats et des outils proposés pour assurer une <span class="red">recherche reproductible</span></q>
 
-##  R interactif et reproductible (Rcharts)
+# Débats
+
+## Prise de conscience
+
+Multiple crises ... psychologie, science sociales
+=> Prise de conscience **brutale**
+
+## Remise à plat des termes
+
+- Reproductibilité = Reproductibility ? 
+- Reproducible = Replicable ?
+
+# Open NoteBook
+
+---
+<q> ... there is a URL to a laboratory notebook that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world -- Jean-Claude Bradley </p>
+
+## Pourquoi ?
+- local pour le partage, la replication
+- web pour le partage, la dissémination
+
+## Comment ?
+
+Des langages, des communautées, des innovations :
+- R 
+- Python
+
+=> Etude de l'existant : R un langage 
+
+##  R statique
+
+- Génération de rapport dynamique 
+- mais un rendu des éléments statique
+
+=> Exemple de réalisation ? ElementR 
+
+##  R interactif | Rcharts
 
 Pas mature, mais à suivre ...
 
@@ -28,7 +66,7 @@ n1 <- rPlot(mpg ~ wt, data = mtcars, color = "gear", type = "point")
 n1$show('iframesrc', cdn = TRUE)
 ```
 
-## R interactif et reproductible (ggvis)
+## R interactif | ggvis
 
 ```{r ggvis,echo=FALSE}
 library(ggvis)
@@ -39,7 +77,7 @@ mtcars %>%
 
 ```
 
-##  R interactif et reproductible (Shiny)
+##  R interactif | Shiny
 
 bla
 
@@ -77,15 +115,17 @@ plt.savefig("somefilename.png")
 cat("![figure](./somefilename.png)")
 ```
 
+# Simulation
+
 ## Et pour la simulation ? 
 
-Deux niveaux de reproductibilité à prendre en compte : 
+Deux niveaux à prendre en compte : 
 - Simulation(s)
 - Exploration(s) de simulation 
 
 ## Exemple avec RNetlogo 
 
-bla
+R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisant.
 
 ## Quelles contraintes ?
 
