@@ -12,19 +12,31 @@ csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/
 widescreen: yes
 ---
 
+[//]: <> (http://stackoverflow.com/questions/3311940/r-rjava-package-install-failing)
+
 ##  Crise(s)
 
 blabla
 
 ##  R interactif et reproductible (Rcharts)
 
+Pas mature, mais à suivre ...
 
-
-
-```{r rcht, message=FALSE, echo=FALSE, results='asis'}   
+```{r rcht, message=FALSE, echo=FALSE, results='asis'}
 library(rCharts)
 n1 <- rPlot(mpg ~ wt, data = mtcars, color = "gear", type = "point")
 n1$show('iframesrc', cdn = TRUE)
+```
+
+## R interactif et reproductible (ggvis)
+
+```{r ggvis,echo=FALSE}
+library(ggvis)
+mtcars %>%
+  ggvis(~wt, ~mpg) %>%
+  layer_smooths(span = input_slider(0.5, 1, value = 1)) %>%
+  layer_points(size := input_slider(100, 1000, value = 100))
+
 ```
 
 ##  R interactif et reproductible (Shiny)
@@ -72,6 +84,8 @@ Deux niveaux de reproductibilité à prendre en compte :
 - Exploration(s) de simulation 
 
 ## Exemple avec RNetlogo 
+
+bla
 
 ## Quelles contraintes ?
 

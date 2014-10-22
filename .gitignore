@@ -2,3 +2,4 @@
 .Rhistory
 .RData
 *.bib
+packrat/lib*/
