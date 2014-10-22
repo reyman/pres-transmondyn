@@ -1,0 +1,91 @@
+---
+title: "presentation"
+author: "Rey; Cura"
+date: "22/10/2014"
+output:
+  ioslides_presentation:
+    highlight: pygments
+    css: slides.css
+runtime: shiny
+bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
+csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
+widescreen: yes
+---
+
+##  Crise(s)
+
+blabla
+
+##  R interactif et reproductible (Rcharts)
+
+
+
+
+```{r rcht, message=FALSE, echo=FALSE, results='asis'}   
+library(rCharts)
+n1 <- rPlot(mpg ~ wt, data = mtcars, color = "gear", type = "point")
+n1$show('iframesrc', cdn = TRUE)
+```
+
+##  R interactif et reproductible (Shiny)
+
+bla
+
+## Vers des outils plus Polyglotte
+
+bla 
+
+## Python reproductible 
+
+```{r engine="python",echo=FALSE}
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+for c, z in zip(['r', 'g', 'b', 'y'], [30, 20, 10, 0]):
+  xs = np.arange(20)
+  ys = np.random.rand(20)
+
+# You can provide either a single color or an array. To demonstrate this,
+# the first bar of each set will be colored cyan.
+cs = [c] * len(xs)
+cs[0] = 'c'
+ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
+
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
+
+plt.savefig("somefilename.png")
+```
+
+```{r showfig,include=TRUE,echo=FALSE, results='asis'} 
+cat("![figure](./somefilename.png)")
+```
+
+## Et pour la simulation ? 
+
+Deux niveaux de reproductibilité à prendre en compte : 
+- Simulation(s)
+- Exploration(s) de simulation 
+
+## Exemple avec RNetlogo 
+
+## Quelles contraintes ?
+
+- déposer les données
+- déposer les codes sources
+- déposer le(s) papier(s) support des expériences
+
+Est ce suffisant ? => Non, problème plus complexe !
+
+## Ecosystèmes
+
+- Machine virtuelle
+- Suivi et empaquetage de dépendance (packrat, etc.)
+- Workflows
+
+# References {.smaller}
+
