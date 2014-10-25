@@ -44,6 +44,16 @@ Scandale, cf JSTOR (2011) <br/>
 
 <div class="centered">
 Pb #2 : Reproductibilité 
+<blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
+</div>
+
+
+<blockquote>It should be clear that in order for Computer Science research to be reproducible, several hurdles
+have to be cleared: <mark>the source code and test case data have to be available</mark>,  <mark>the code has to build</mark>,  <mark>the execution environment has to be replicated</mark>,  <mark>the code itself has to run to completion</mark>,  <mark>and accurate measurements [...] have to be collected. </mark> In this paper we concentrate on the two most basic of these requirements: <mark>is the source code available, and does it build? </mark> -- @Collberg2014 </blockquote>
+
+----
+
+<div class="centered">
 <img src="presentation-images/computer_science_reproducibility.png"  style="width: 80%;"/>
 </div>
 
@@ -95,8 +105,7 @@ Replicability, Reproductibility, Repeatability
 
 <blockquote> We can reserve the term <b>"replicability"</b> for the regeneration of published results from author-provided code and data. [...] <b>Reproducibility</b> is a more general term, imply-ing both replication and the regeneration of find-ings with at least some independence from the code and/or data associated with the original publication. Both refer to the analysis that occurs after publica-tion. A third term, <b>“repeatability,”</b> is sometimes used in place of reproducibility, but this is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken. -- <b>Victoria Stodden 2011</b></blockquote>
 
-
-<q> def recherche reproductible </q>
+<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication</mark> <mark>as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
 
 ----
 
@@ -104,9 +113,9 @@ Replicability, Reproductibility, Repeatability
 
 ## Des idéaux
 
-<blockquote> <b>OpenNotebook</b> ... there is a URL to a laboratory notebook that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world -- <b>Jean-Claude Bradley</b> </blockquote>
+<blockquote> <b>OpenNotebook</b> ... there is a <mark>URL to a laboratory notebook</mark> that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but <mark>it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world </mark> -- @Bradley2006 </blockquote>
 
-<blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de considérer les programmes comme des œuvres littéraires. D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse. -- <b>Donald Knuth</b> </blockquote>
+<blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de <mark>considérer les programmes comme des œuvres littéraires</mark>. D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : <mark>au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.</mark> -- @Knuth1984 </blockquote>
 
 <!---
 - Pour les journaux (BOAI, HowOpenIsIt, etc.)
@@ -185,7 +194,10 @@ cat("![figure](./somefilename.png)")
 
 ## Et pour la simulation ? 
 
+<blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
+
 Deux niveaux à prendre en compte : 
+
 - Simulation(s)
 - Exploration(s) de simulation 
 
@@ -203,7 +215,9 @@ Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe 
 
 ## Ecosystèmes
 
-
+- Machine virtuelle
+- Suivi et empaquetage de dépendance (packrat, etc.)
+- Workflows
 
 # References {.smaller}
 
