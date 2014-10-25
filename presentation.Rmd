@@ -203,9 +203,7 @@ Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe 
 
 ## Ecosystèmes
 
-- Machine virtuelle
-- Suivi et empaquetage de dépendance (packrat, etc.)
-- Workflows
+
 
 # References {.smaller}
 

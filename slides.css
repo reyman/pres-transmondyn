@@ -10,6 +10,11 @@ h2 {
     font-size: 35px;
 }
 
+mark {
+  background-color: #EBEBE4;
+  color: black;
+}
+
  blockquote {
   display: block;
   margin: 1.5em 0 1.5em -1.5em;
