@@ -192,13 +192,24 @@ cat("![figure](./somefilename.png)")
 
 # Simulation
 
-## Et pour la simulation ? 
+## Quel état des lieux ? 
+
+Graphique en cours de réalisation :)
+
+## Quel état des lieux ? 
+
+<div class="centered">
+Survey de @Heath2009 <br/>
+<img src="presentation-images/validation_pourcentage_2009.png"  style="width: 70%;"/>
+</div>
+
+## Un objet de recherche 
 
 <blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
 
 Deux niveaux à prendre en compte : 
 
-- Simulation(s)
+- Simulation(s) de modèle
 - Exploration(s) de simulation 
 
 ## Exemple avec RNetlogo 
