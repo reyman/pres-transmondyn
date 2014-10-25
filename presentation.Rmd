@@ -16,57 +16,127 @@ widescreen: yes
 
 [//]: <> (http://stackoverflow.com/questions/3311940/r-rjava-package-install-failing)
 
----
+----
 
-<q> Faire le point sur la <span class="red">réplication</span> des modèles de simulations dans le contexte plus large des débats et des outils proposés pour assurer une <span class="red">recherche reproductible</span></q>
+<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large <span class="red">des débats</span> et des outils proposés pour assurer une <span class="red">recherche reproductible</span></q>
 
-# Débats
+# Débats publics
 
-## Prise de conscience
+---- 
 
-Multiple crises ... psychologie, science sociales
-=> Prise de conscience **brutale**
+<div class="centered">
 
-## Remise à plat des termes
+Pb #1 : Paywall <br/>
 
-- Reproductibilité = Reproductibility ? 
-- Reproducible = Replicable ?
+<img src="presentation-images/paywall.png"  style="height: 80%;"/>
+</div>
 
-# Open NoteBook
+---- 
 
----
-<q> ... there is a URL to a laboratory notebook that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world -- Jean-Claude Bradley </p>
+<div class="centered">
 
-## Pourquoi ?
-- local pour le partage, la replication
-- web pour le partage, la dissémination
+Scandale, cf JSTOR (2011) <br/>
 
-## Comment ?
+<img src="presentation-images/Obit-Swartz_Darg.jpg"  style="width: 80%;"/>
+</div>
 
-Des langages, des communautées, des innovations :
-- R 
-- Python
+----
 
-=> Etude de l'existant : R un langage 
+<div class="centered">
+Pb #2 : Reproductibilité 
+<img src="presentation-images/computer_science_reproducibility.png"  style="width: 80%;"/>
+</div>
 
-##  R statique
+----
 
-- Génération de rapport dynamique 
-- mais un rendu des éléments statique
+<div class="centered">
 
-=> Exemple de réalisation ? ElementR 
+Scandales <br/>
 
-##  R interactif | Rcharts
+</div>
 
-Pas mature, mais à suivre ...
 
-```{r rcht, message=FALSE, echo=FALSE, results='asis'}
-library(rCharts)
-n1 <- rPlot(mpg ~ wt, data = mtcars, color = "gear", type = "point")
-n1$show('iframesrc', cdn = TRUE)
-```
+# L'organisation collective d'une réponse
 
-## R interactif | ggvis
+## Les pionniers
+    
+<blockquote> [...] The project started with the philosophy that much academic information should be freely available to anyone. It aims to allow information sharing within internationally dispersed teams, and the dissemination of information by support groups. -- Tim Berners-Lee (1991)</blockquote>
+
+<blockquote>In the fall of 1992, a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails -- Paul Ginsparg (2011) </blockquote>
+
+## Les pionniers
+
+<div class="centered">
+<img src="presentation-images/science_papers_evolution.jpg"  style="width: 100%;"/>
+</div>
+
+## Les pionniers
+
+- Open Access définit avec démocratisation du web (BOAI 2000's conference)
+- Open Data , Open Source , etc.
+- <b>Un terme pour les amener tous et dans la communauté les lier ? </b> 
+
+=> <span color="red">Open Science</span>
+
+## Open Science
+
+- des définitions (open data, open access, etc.)
+- des manifestes
+- une multiplicité d'acteurs (institutions, journaux, chercheurs)
+- une problématique à l'échelle mondiale
+
+=> Un terme ressort de la masse, "recherche reproductible" 
+
+# Remise à plat des termes
+
+----
+
+Replicability, Reproductibility, Repeatability 
+
+<blockquote> We can reserve the term <b>"replicability"</b> for the regeneration of published results from author-provided code and data. [...] <b>Reproducibility</b> is a more general term, imply-ing both replication and the regeneration of find-ings with at least some independence from the code and/or data associated with the original publication. Both refer to the analysis that occurs after publica-tion. A third term, <b>“repeatability,”</b> is sometimes used in place of reproducibility, but this is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken. -- <b>Victoria Stodden 2011</b></blockquote>
+
+
+<q> def recherche reproductible </q>
+
+----
+
+<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une <span class="red">recherche reproductible</span></q>
+
+## Des idéaux
+
+<blockquote> <b>OpenNotebook</b> ... there is a URL to a laboratory notebook that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world -- <b>Jean-Claude Bradley</b> </blockquote>
+
+<blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de considérer les programmes comme des œuvres littéraires. D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse. -- <b>Donald Knuth</b> </blockquote>
+
+<!---
+- Pour les journaux (BOAI, HowOpenIsIt, etc.)
+- Pour les institutions (Horizon2020, NSF 2014, Royal Society Science, etc.)
+- Pour les disciplines : Psychoterapy (James Coyne), 
+--->
+
+- Pour les codes informatiques : 
+  - Science Code Manifesto (Barnes 2011)
+  - The recomputation manifesto (Gent, Ian P 2013)
+
+## Des outils 
+
+- Des communautées > des outils > des <span color ="red"> innovations </span>
+
+- Un support d'échange privilégié, le navigateur internet
+
+- Une multiplicité d'outils
+  - Ecriture collaborative 
+  - Dissimination (papiers, données, codes sources)
+  
+- Des langages clef
+  - R (Sweave, Knitr, Rmarkdown)
+  - Python (Ipython)
+
+# L'exemple des papier dynamiques avec R
+
+## R interactif 
+
+ggvis ou shiny
 
 ```{r ggvis,echo=FALSE}
 library(ggvis)
@@ -76,10 +146,6 @@ mtcars %>%
   layer_points(size := input_slider(100, 1000, value = 100))
 
 ```
-
-##  R interactif | Shiny
-
-bla
 
 ## Vers des outils plus Polyglotte
 
@@ -133,7 +199,7 @@ R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisan
 - déposer les codes sources
 - déposer le(s) papier(s) support des expériences
 
-Est ce suffisant ? => Non, problème plus complexe !
+Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe !
 
 ## Ecosystèmes
 

@@ -3,7 +3,6 @@
 
 h2 { 
  font-size:1.8em; 
- color: red;
 }
 
 .title-slide hgroup h1 {
@@ -11,7 +10,22 @@ h2 {
     font-size: 35px;
 }
 
-slides > slide[data-slide-num= "2"]
+ blockquote {
+  display: block;
+  margin: 1.5em 0 1.5em -1.5em;
+  padding: .75em .5em .75em 1em;
+  background: #fff;
+  font-family: 'Crimson Text';
+  border-left: 0.5em solid green;
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.5;
+  -webkit-box-shadow: 0 0 5px rgba(20,20,20,0.5);
+  -moz-box-shadow: 0 0 5px rgba(20,20,20,0.5);
+  box-shadow: 0 0 5px rgba(20,20,20,0.5);
+}
+
+slides > slide[data-slide-num= "3"]
 {
 background-color: #515151;
 }
