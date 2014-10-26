@@ -107,6 +107,11 @@ Pb #3 : Scandales <br/>
 
 Reproducible research ? 
 
+<div class="centered">
+<img src="presentation-images/active_paper.png"  style="width: 50%;"/>
+</div>
+
+<blockquote>A revolution in education and technology transfer follows from the <mark>marriage of word processing and software command scripts</mark>. In this marriage <mark>an author attaches to every figure caption a pushbutton or a name tag usable to recalculate the figure from all its data, parameters, and programs. This provides a concrete definition of reproducibility in computationally oriented research.</mark> -- @Claerbout1992 </mark></blockquote>
 
 ----
 
