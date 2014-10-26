@@ -18,7 +18,7 @@ widescreen: yes
 
 ----
 
-<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large <span class="red">des débats</span> et des outils proposés pour assurer une <span class="red">recherche reproductible</span></q>
+<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large <span class="red">des débats</span> et des outils proposés pour assurer une recherche reproductible</q>
 
 # Débats publics
 
@@ -35,7 +35,7 @@ Pb #1 : Paywall <br/>
 
 <div class="centered">
 
-Scandale, cf JSTOR (2011) <br/>
+L'affaire JSTOR (2011) <br/>
 
 <img src="presentation-images/Obit-Swartz_Darg.jpg"  style="width: 80%;"/>
 </div>
@@ -61,7 +61,7 @@ have to be cleared: <mark>the source code and test case data have to be availabl
 
 <div class="centered">
 
-Scandales <br/>
+Pb #3 : Scandales <br/>
 
 </div>
 
@@ -101,15 +101,40 @@ Scandales <br/>
 
 ----
 
-Replicability, Reproductibility, Repeatability 
-
-<blockquote> We can reserve the term <b>"replicability"</b> for the regeneration of published results from author-provided code and data. [...] <b>Reproducibility</b> is a more general term, imply-ing both replication and the regeneration of find-ings with at least some independence from the code and/or data associated with the original publication. Both refer to the analysis that occurs after publica-tion. A third term, <b>“repeatability,”</b> is sometimes used in place of reproducibility, but this is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken. -- <b>Victoria Stodden 2011</b></blockquote>
-
-<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication</mark> <mark>as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+<q> Faire le point sur la réplication des modèles de simulations  dans le contexte plus large des débats et des outils proposés pour assurer <span class="red"> une recherche reproductible </span></q>
 
 ----
 
-<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une <span class="red">recherche reproductible</span></q>
+Reproducible research ? 
+
+
+----
+
+Replicability, Reproductibility, Repeatability ?
+
+<blockquote> We can reserve the term <mark>Replicability for the regeneration of published results from author-provided code and data.</mark> [...] <mark>Reproducibility is a more general term, implying both replication and the regeneration of findings with at least some independence from the code and/or data associated with the original publication.</mark> Both refer to the analysis that occurs after publication. A third term, <mark>Repeatability</mark>, is sometimes used in place of reproducibility, but this <mark>is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken.</mark> -- <b>Victoria Stodden 2011</b></blockquote>
+
+----
+
+@Gent2013, auteur du "Recomputation Manifesto" <br/> <span class="red"><b> Vs </b> </span> <br/> @Drummond2009
+
+<blockquote>Drummond argues powerfully that this - which he calls ‘replicability’ - is the poor cousin of ‘reproducibility’, where experiments are reproduced with changes to factors believed to be insignificant. There is no question that key advances in science should be reproducible in Drummond’s richer sense, but neither do I accept that “the impoverished version, replicability, is one not worth having” -- @Gent2013 </blockquote>
+
+----
+
+<q> Faire le point sur <span class= "red" > la réplication des modèles de simulations </span>  dans le contexte plus large des débats et des outils proposés pour assurer une recherche reproductible</q>
+
+----
+
+Deux conceptions différentes du termes
+
+<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication</mark> <mark>as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+
+<blockquote>Computing independent replications in the NetLogo platform means initializing the seed of the pseudo-random number generator with different values prior to each run. -- @Reuillon2013</blockquote>
+
+----
+
+<q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une recherche reproductible</q>
 
 ## Des idéaux
 
@@ -197,6 +222,8 @@ cat("![figure](./somefilename.png)")
 Graphique en cours de réalisation :)
 
 ## Quel état des lieux ? 
+
+Ajouter une slide sur le fait que c'est un probleme ancien ... 
 
 <div class="centered">
 Survey de @Heath2009 <br/>
