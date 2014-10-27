@@ -18,60 +18,42 @@ library(RNetLogo)
 library(ggplot2)
 
 currentUser <- as.list(Sys.info())$user
+currentSys <- as.list(Sys.info())$sysname
 if (currentUser  == "robin"){
-  nlDir <- "/home/robin/Downloads/netlogo-5.0.5/"
+	if (currentSys == "Windows"){
+		nlDir <- "C:\\Program Files (x86)\\NetLogo 5.0.4\\"
+		model.path <- "D:\\repositories\\pres-transmondyn\\ColonDyn12.nlogo"
+	} else {
+		nlDir <- "/home/robin/Downloads/netlogo-5.0.5/"
+		model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
+	}
 } else {
   nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
+  model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
 }
 
-setwd(nlDir)
+NLStart(nlDir, gui = TRUE) # start NetLogo "headless"
  
-nl.path <- getwd()
-NLStart(nl.path, gui = FALSE) # start NetLogo "headless"
- 
-model.path <- file.path("models", "Sample Models", "Earth Science","Fire.nlogo")
-NLLoadModel(file.path(nl.path, model.path))
+NLLoadModel(model.path)
 
-NLCommand("set density 60")
+NLCommand('set Resource_Landscape "U-turn"')
+NLCommand('set Ressource-regeneration 1')
+NLCommand('set human-pressure-on-ecology 150')
+NLCommand('set migration-cost 80')
+NLCommand('set Migration-rule "Maximisation of ressource"')
+
 NLCommand("setup")
-burned <- NLDoReportWhile("any? turtles", "go",
-                c("ticks", "(burned-trees / initial-trees) * 100"),
-                as.data.frame = TRUE, df.col.names = c("tick", "percent.burned"))
+results <- NLDoReportWhile("(any? groups) and (ticks < 1000)", "go",
+                c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
+                as.data.frame = TRUE, df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"))
 # Plot with ggplot2
-p <- ggplot(burned,aes(x=tick,y=percent.burned))
-p + geom_line() + ggtitle("Non-linear forest fire progression with density = 60")
-```
-
-## Slide with Interactive Plot
-
-```{r, echo=FALSE}
-inputPanel(
-  selectInput("n_breaks", label = "Number of bins:",
-              choices = c(10, 20, 35, 50), selected = 20),
-  
-  sliderInput("bw_adjust", label = "Bandwidth adjustment:",
-              min = 0.2, max = 2, value = 1, step = 0.2)
-)
-
-renderPlot({
-  hist(faithful$eruptions, probability = TRUE, breaks = as.numeric(input$n_breaks),
-       xlab = "Duration (minutes)", main = "Geyser eruption duration")
-  
-  dens <- density(faithful$eruptions, adjust = input$bw_adjust)
-  lines(dens, col = "blue")
-})
-```
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Code and Output
-
-```{r}
-summary(cars)
+p <- ggplot(results)
+p + geom_line(aes(x=tick,y=Global_Density, colour = "red")) + 
+  geom_line(aes(x=tick,y=Local_Density, colour = "blue")) + 
+  geom_line(aes(x=tick,y=Number_of_Groups, colour = "grey")) + 
+  scale_colour_manual(name = 'Indicateurs', values =c('grey'='grey','red'='red','blue'='blue'), labels = c('Densité locale', "Nombre de groupes en vie", 'Densité globale')) + 
+  ggtitle("ColoDyn results")
+NLQuit()
 ```
 
 
