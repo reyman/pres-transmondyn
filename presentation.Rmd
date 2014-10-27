@@ -237,6 +237,13 @@ cat("![figure](./somefilename.png)")
 <img src="presentation-images/capture_format.png"  style="width: 70%;"/>
 </div>
 
+## Exemple de projets 
+ 
+<div class="columns-2">
+<img src="presentation-images/Capital_in_the_Twenty-First_Century.jpg"  style="width: 300px;"/>
+<img src="presentation-images/elementR.png"  style="width: 350px;"/>
+</div>
+
 
 # Simulation
 
