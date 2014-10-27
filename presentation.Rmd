@@ -67,6 +67,17 @@ Pb #3 : Scandales <br/>
 
 # L'organisation collective d'une réponse
 
+## l'Open Science
+
+<blockquote>Open science is the movement to make scientific research, data and dissemination accessible to all levels of an inquiring society, amateur or professional. It encompasses practices such as publishing open research, campaigning for open access, encouraging scientists to practice open notebook science, and generally making it easier to publish and communicate scientific knowledge. -- Wikipedia 2014 </blockquote>
+
+<blockquote> a) Transparency in experimental methodology, observation, and collection of data. b) Public availability and reusability of scientific data. c) Public accessibility and transparency of scientific communication. d) Using web-based tools to facilitate scientific collaboration. http://www.openscience.org </blockquote>
+
+## l'Open Science
+
+<img src="presentation-images/openscience_pointofview.png"  style="width: 70%;"/>
+
+<blockquote>The infrastructure school (which is concerned with the technological architecture), the public school (which is concerned with the accessibility of knowledge creation), the “measurement school”(which is concerned with alternative impact measurement), the “democratic school”(which is concerned with access to knowledge) and the “pragmatic school” (which is concerned with collaborative research). -- http://book.openingscience.org 2014 </blockquote>
 ## Les pionniers (WWW)
 
 <img src="presentation-images/bernardlee.jpg" style="width:300px"; class = "author"/>
@@ -102,16 +113,11 @@ bla
 
 <blockquote> By <mark> “open access” </mark> to [peer-reviewed research literature], we mean <mark>its free availability on the public internet, permitting any users to read, download, copy, distribute, print, search, or link to the full texts of these articles, crawl them for indexing, pass them as data to software, or use them for any other lawful purpose, without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself.</mark> The only constraint on reproduction and distribution, and the only role for copyright in this domain, should be to give authors control over the integrity of their work and the right to be properly acknowledged and cited.</blockquote>
 
-## Emergence de l'Open Science
+## Les pionniers (Open Notebook)
 
-<!---
-- des définitions (open data, open access, etc.)
-- des manifestes
-- une multiplicité d'acteurs (institutions, journaux, chercheurs)
-- une problématique à l'échelle mondiale
---->
+<img src="presentation-images/jean-claudebradley.jpg" style="width:200px"; class = "author"/>
 
-<img src="presentation-images/openscience_pointofview.png"  style="width: 70%;"/>
+<blockquote> <b>OpenNotebook</b> ... there is a <mark>URL to a laboratory notebook</mark> that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but <mark>it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world </mark> -- @Bradley2006 </blockquote>
 
 # Remise à plat des termes
 
@@ -151,8 +157,6 @@ Replicability, Reproductibility, Repeatability ?
 <q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une recherche reproductible</q>
 
 ## Des idéaux
-
-<blockquote> <b>OpenNotebook</b> ... there is a <mark>URL to a laboratory notebook</mark> that is freely available and indexed on common search engines. It does not necessarily have to look like a paper notebook but <mark>it is essential that all of the information available to the researchers to make their conclusions is equally available to the rest of the world </mark> -- @Bradley2006 </blockquote>
 
 <blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de <mark>considérer les programmes comme des œuvres littéraires</mark>. D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : <mark>au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.</mark> -- @Knuth1984 </blockquote>
 
