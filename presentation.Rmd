@@ -78,6 +78,7 @@ Pb #3 : Scandales <br/>
 <img src="presentation-images/openscience_pointofview.png"  style="width: 70%;"/>
 
 <blockquote>The infrastructure school (which is concerned with the technological architecture), the public school (which is concerned with the accessibility of knowledge creation), the “measurement school”(which is concerned with alternative impact measurement), the “democratic school”(which is concerned with access to knowledge) and the “pragmatic school” (which is concerned with collaborative research). -- http://book.openingscience.org 2014 </blockquote>
+
 ## Les pionniers (WWW)
 
 <img src="presentation-images/bernardlee.jpg" style="width:300px"; class = "author"/>
@@ -133,10 +134,11 @@ Reproducible research ?
 <img src="presentation-images/active_paper.png"  style="width: 50%;"/>
 </div>
 
+----
+
 <blockquote> The term reproducible research refers to the idea that the ultimate product of academic research is the paper along with the full computational environment used to produce the results in the paper such as the code, data, etc. that can be used to reproduce the results and create new work based on the research. -- Wikipedia </blockquote>
 
 <blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
-</div>
 
 <blockquote>A revolution in education and technology transfer follows from the <mark>marriage of word processing and software command scripts</mark>. In this marriage <mark>an author attaches to every figure caption a pushbutton or a name tag usable to recalculate the figure from all its data, parameters, and programs. This provides a concrete definition of reproducibility in computationally oriented research.</mark> -- @Claerbout1992 </mark></blockquote>
 
