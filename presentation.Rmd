@@ -194,14 +194,6 @@ Un débat encore très actif sur les termes ... <br/>
 
 ggvis ou shiny
 
-```{r ggvis,echo=FALSE}
-library(ggvis)
-mtcars %>%
-  ggvis(~wt, ~mpg) %>%
-  layer_smooths(span = input_slider(0.5, 1, value = 1)) %>%
-  layer_points(size := input_slider(100, 1000, value = 100))
-
-```
 
 ## Python reproductible 
 

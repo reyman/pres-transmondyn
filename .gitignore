@@ -3,3 +3,4 @@
 .RData
 *.bib
 packrat/lib*/
+packrat/src/
