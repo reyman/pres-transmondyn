@@ -17,7 +17,13 @@ To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authorin
 library(RNetLogo)
 library(ggplot2)
 
-nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
+currentUser <- as.list(Sys.info())$user
+if (currentUser  == "robin"){
+  nlDir <- "/home/robin/Downloads/netlogo-5.0.5/"
+} else {
+  nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
+}
+
 setwd(nlDir)
  
 nl.path <- getwd()
