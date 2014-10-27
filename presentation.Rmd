@@ -44,17 +44,17 @@ L'affaire JSTOR (2011) <br/>
 
 <div class="centered">
 Pb #2 : Reproductibilité 
-<blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
-</div>
 
 
-<blockquote>It should be clear that in order for Computer Science research to be reproducible, several hurdles
-have to be cleared: <mark>the source code and test case data have to be available</mark>,  <mark>the code has to build</mark>,  <mark>the execution environment has to be replicated</mark>,  <mark>the code itself has to run to completion</mark>,  <mark>and accurate measurements [...] have to be collected. </mark> In this paper we concentrate on the two most basic of these requirements: <mark>is the source code available, and does it build? </mark> -- @Collberg2014 </blockquote>
+<!--- 
+It should be clear that in order for Computer Science research to be reproducible, several hurdles
+have to be cleared: <mark>the source code and test case data have to be available</mark>,  <mark>the code has to build</mark>,  <mark>the execution environment has to be replicated</mark>,  <mark>the code itself has to run to completion</mark>,  <mark>and accurate measurements [...] have to be collected.--->
 
-----
+
+<blockquote></mark> In this paper we concentrate on the two most basic of these requirements: <mark>is the source code available, and does it build? </mark> -- @Collberg2014 </blockquote>
 
 <div class="centered">
-<img src="presentation-images/computer_science_reproducibility.png"  style="width: 80%;"/>
+<img src="presentation-images/computer_science_reproducibility.png"  style="width: 70%;"/>
 </div>
 
 ----
@@ -65,37 +65,53 @@ Pb #3 : Scandales <br/>
 
 </div>
 
-
 # L'organisation collective d'une réponse
 
-## Les pionniers
-    
-<blockquote> [...] The project started with the philosophy that much academic information should be freely available to anyone. It aims to allow information sharing within internationally dispersed teams, and the dissemination of information by support groups. -- Tim Berners-Lee (1991)</blockquote>
+## Les pionniers (WWW)
 
-<blockquote>In the fall of 1992, a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails -- Paul Ginsparg (2011) </blockquote>
+<img src="presentation-images/bernardlee.jpg" style="width:300px"; class = "author"/>
 
-## Les pionniers
+<blockquote> [...] <mark>The project started with the philosophy that much academic information should be freely available to anyone.</mark> It aims to allow information sharing within internationally dispersed teams, and the dissemination of information by support groups. -- Tim Berners-Lee (1991) <br/><br/></blockquote>
 
-<div class="centered">
-<img src="presentation-images/science_papers_evolution.jpg"  style="width: 100%;"/>
-</div>
+## Les pionniers (Free software)
 
-## Les pionniers
+<img src="presentation-images/GNU_and_Stallman_2012.jpg" style="width:300px"; class = "author"/>
 
-- Open Access définit avec démocratisation du web (BOAI 2000's conference)
-- Open Data , Open Source , etc.
-- <b>Un terme pour les amener tous et dans la communauté les lier ? </b> 
+<blockquote><mark> Logiciel libre </mark> [free software] désigne des logiciels qui respectent la liberté des utilisateurs. En gros, cela veut dire que <mark>les utilisateurs ont la liberté d'exécuter, copier, distribuer, étudier, modifier et améliorer ces logiciels.</mark> Ainsi, « logiciel libre » fait référence à la liberté, pas au prix. Pour comprendre ce concept, vous devez penser à « liberté d'expression », pas à « entrée libre » -- Free Software Foundation 2014 </blockquote>
 
-=> <span color="red">Open Science</span>
+<img src="presentation-images/ericSRaymond.jpg" style="width:300px"; class = "author"/>
 
-## Open Science
+<blockquote> Open source software is software that can be freely used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition. -- The Open Source Initiative 2014 </blockquote>
 
+## Les pionniers (Open Data)
+
+bla 
+
+## Les pionniers (Open Access)
+
+<img src="presentation-images/ginsparg_paul.jpg" style="width:300px"; class = "author"/>
+
+<blockquote>In the fall of 1992, <mark>a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails </mark>-- Paul Ginsparg (2011) </blockquote>
+
+<img src="presentation-images/arxiv.jpg" align="middle" style="width:400px"; class="author"/>
+<blockquote>Arxiv history quotation-- Paul Ginsparg (2011) </blockquote>
+
+## Les pionniers (Open Access)
+
+<img src="presentation-images/boai.png" style="width:200px"; class = "author"/>
+
+<blockquote> By <mark> “open access” </mark> to [peer-reviewed research literature], we mean <mark>its free availability on the public internet, permitting any users to read, download, copy, distribute, print, search, or link to the full texts of these articles, crawl them for indexing, pass them as data to software, or use them for any other lawful purpose, without financial, legal, or technical barriers other than those inseparable from gaining access to the internet itself.</mark> The only constraint on reproduction and distribution, and the only role for copyright in this domain, should be to give authors control over the integrity of their work and the right to be properly acknowledged and cited.</blockquote>
+
+## Emergence de l'Open Science
+
+<!---
 - des définitions (open data, open access, etc.)
 - des manifestes
 - une multiplicité d'acteurs (institutions, journaux, chercheurs)
 - une problématique à l'échelle mondiale
+--->
 
-=> Un terme ressort de la masse, "recherche reproductible" 
+<img src="presentation-images/openscience_pointofview.png"  style="width: 70%;"/>
 
 # Remise à plat des termes
 
@@ -109,6 +125,11 @@ Reproducible research ?
 
 <div class="centered">
 <img src="presentation-images/active_paper.png"  style="width: 50%;"/>
+</div>
+
+<blockquote> The term reproducible research refers to the idea that the ultimate product of academic research is the paper along with the full computational environment used to produce the results in the paper such as the code, data, etc. that can be used to reproduce the results and create new work based on the research. -- Wikipedia </blockquote>
+
+<blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
 </div>
 
 <blockquote>A revolution in education and technology transfer follows from the <mark>marriage of word processing and software command scripts</mark>. In this marriage <mark>an author attaches to every figure caption a pushbutton or a name tag usable to recalculate the figure from all its data, parameters, and programs. This provides a concrete definition of reproducibility in computationally oriented research.</mark> -- @Claerbout1992 </mark></blockquote>
@@ -249,7 +270,7 @@ Docking et Replication<br/>
 Liens : http://cfpm.org/m2m/, http://www.insisoc.org/ESSA04/M2M2.htm, http://m2m2007.hutton.ac.uk/m2m_programme.html
 --->
 
-<b>a) Model-to-Model series of workshops 2003 - 2008 </b>
+<b> a) Model-to-Model series of workshops 2003 - 2008 </b>
 
 - M2M-1 @Hales2003 <span class="green">(Marseille 2003)</span>
 - M2M-2 <span class="green">(Valladolid 2004)</span>
@@ -257,7 +278,7 @@ Liens : http://cfpm.org/m2m/, http://www.insisoc.org/ESSA04/M2M2.htm, http://m2m
 
 => <span class = "red">mais fin des workshop ... </span> selon @Rouchier2013
 
-<b>b) Réseau RNSC Maps 2009 - 2014 (</b>
+<b> b) Réseau RNSC Maps 2009 - 2014 </b>
 
 - 7 Workshops (formation, réplication, conférences)
 - Publication fiche pédagogique (2015)

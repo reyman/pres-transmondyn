@@ -10,6 +10,13 @@ h2 {
     font-size: 35px;
 }
 
+.author
+{
+  float:left;
+  clear:both;
+  margin:8px 8px 8px 8px;
+}
+
 mark {
   background-color: #EBEBE4;
   color: black;
