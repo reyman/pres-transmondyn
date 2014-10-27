@@ -128,15 +128,17 @@ bla
 
 ----
 
-Reproducible research ? 
-
 <div class="centered">
 <img src="presentation-images/active_paper.png"  style="width: 50%;"/>
 </div>
 
-----
+<blockquote> The term <mark>reproducible research</mark> refers to the idea that the ultimate product of academic research is <mark>the paper along with the full computational environment used to produce the results in the paper such as the code, data, etc. that can be used to reproduce the results and create new work based on the research. </mark> -- Wikipedia </blockquote>
 
-<blockquote> The term reproducible research refers to the idea that the ultimate product of academic research is the paper along with the full computational environment used to produce the results in the paper such as the code, data, etc. that can be used to reproduce the results and create new work based on the research. -- Wikipedia </blockquote>
+## L'idée sous-jacente
+
+<blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de <mark>considérer les programmes comme des œuvres littéraires</mark>.D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : <mark>au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.</mark> -- @Knuth1984 </blockquote>
+
+## Les précurseurs
 
 <blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
 
@@ -144,11 +146,13 @@ Reproducible research ?
 
 ----
 
-Replicability, Reproductibility, Repeatability ?
+Un débat sur les termes : <b>Replicability, Reproductibility, Repeatability ?</b>
 
 <blockquote> We can reserve the term <mark>Replicability for the regeneration of published results from author-provided code and data.</mark> [...] <mark>Reproducibility is a more general term, implying both replication and the regeneration of findings with at least some independence from the code and/or data associated with the original publication.</mark> Both refer to the analysis that occurs after publication. A third term, <mark>Repeatability</mark>, is sometimes used in place of reproducibility, but this <mark>is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken.</mark> -- <b>Victoria Stodden 2011</b></blockquote>
 
 ----
+
+Un débat encore très actif sur les termes ... <br/>
 
 @Gent2013, auteur du "Recomputation Manifesto" <br/> <span class="red"><b> Vs </b> </span> <br/> @Drummond2009
 
@@ -159,8 +163,6 @@ Replicability, Reproductibility, Repeatability ?
 <q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une recherche reproductible</q>
 
 ## Des idéaux
-
-<blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de <mark>considérer les programmes comme des œuvres littéraires</mark>. D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : <mark>au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.</mark> -- @Knuth1984 </blockquote>
 
 <!---
 - Pour les journaux (BOAI, HowOpenIsIt, etc.)
@@ -243,7 +245,6 @@ cat("![figure](./somefilename.png)")
 <img src="presentation-images/Capital_in_the_Twenty-First_Century.jpg"  style="width: 300px;"/>
 <img src="presentation-images/elementR.png"  style="width: 350px;"/>
 </div>
-
 
 # Simulation
 
