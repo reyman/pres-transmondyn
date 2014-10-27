@@ -39,7 +39,7 @@ mark {
 
 slides > slide[data-slide-num= "3"]
 {
-background-color: #515151;
+  background-color: #515151;
 }
 
 slides > slide > hgroup + article {

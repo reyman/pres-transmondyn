@@ -136,6 +136,10 @@ bla
 
 ## L'idée sous-jacente
 
+<div class="centered">
+<img src="presentation-images/active_paper.png"  style="width: 50%;"/>
+</div>
+
 <blockquote> <b>Litterate programming</b> Je crois que le temps est venu pour une amélioration significative de la documentation des programmes, et que le meilleur moyen d'y arriver est de <mark>considérer les programmes comme des œuvres littéraires</mark>.D'où mon titre, « programmation lettrée ». Nous devons changer notre attitude traditionnelle envers la construction des programmes : <mark>au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.</mark> -- @Knuth1984 </blockquote>
 
 ## Les précurseurs
