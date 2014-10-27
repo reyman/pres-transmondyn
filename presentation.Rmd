@@ -127,25 +127,6 @@ Replicability, Reproductibility, Repeatability ?
 
 ----
 
-<q> Faire le point sur <span class= "red" > la réplication des modèles de simulations </span>  dans le contexte plus large des débats et des outils proposés pour assurer une recherche reproductible</q>
-
-----
-
-Deux conceptions différentes du termes
-
-<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
-
-<blockquote>Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
-
-----
-
-<div class="centered">
-Docking et Replication<br/>
-<img src="presentation-images/docking_replication_synthese.png"  style="width: 70%;"/>
-</div>
-
-----
-
 <q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une recherche reproductible</q>
 
 ## Des idéaux
@@ -232,20 +213,71 @@ cat("![figure](./somefilename.png)")
 
 # Simulation
 
-## Quel état des lieux ? 
+----
 
-Graphique en cours de réalisation :)
+<q> Faire le point sur <span class= "red" > la réplication des modèles de simulations </span>  dans le contexte plus large des débats et des outils proposés pour assurer une recherche reproductible</q>
 
-## Quel état des lieux ? 
+---- 
 
-Ajouter une slide sur le fait que c'est un probleme ancien ... 
+Plusieurs approches, et plusieurs termes
+
+<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+
+<blockquote>This paper develops the concepts and methods of a process we will call <mark>"alignment of computational models" or "docking" for short</mark>. <mark>Alignment is needed to determine whether two models can produce the same results</mark>, which in turn is the basis for critical experiments and for tests of whether one model can subsume another. -- @Axtell1996</blockquote>
+
+<blockquote>Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
+
+----
+
+<div class="centered">
+Docking et Replication<br/>
+<img src="presentation-images/docking_replication_synthese.png"  style="width: 70%;"/>
+</div>
+
+
+## Un état des lieux des pratiques  
+
+<blockquote><mark>The sad fact is that new simulations are produced all the time, but rarely does any one stop to replicate the results of any one else’s simulation model.</mark> -- @Axelrod1997</mark></blockquote>
+
+<blockquote>However, <mark>despite this plethora of interesting models, they are rarely compared, built-on or transferred between researchers.</mark> It would seem there is a dearth of "model-to-model" analysis.<mark> Rather researchers tend to work in isolation, designing all their models from scratch and reporting their results without anyone else reproducing what they found. </mark> -- @Hales2003 </blockquote>
+
+<blockquote>Recent years have seen a proliferation of agent-based models in the natural and social sciences. <mark>But with the exception of a few "classic" models, most of these models have never been replicated by anyone but the original developer.</mark> -- @Wilensky2007a</blockquote>
+
+## Un état des lieux des pratiques  
+
+<!---
+Liens : http://cfpm.org/m2m/, http://www.insisoc.org/ESSA04/M2M2.htm, http://m2m2007.hutton.ac.uk/m2m_programme.html
+--->
+
+<b>a) Model-to-Model series of workshops 2003 - 2008 </b>
+
+- M2M-1 @Hales2003 <span class="green">(Marseille 2003)</span>
+- M2M-2 <span class="green">(Valladolid 2004)</span>
+- M2M-3 @Rouchier2008 <span class="green">(Marseille 2007)</span>
+
+=> <span class = "red">mais fin des workshop ... </span> selon @Rouchier2013
+
+<b>b) Réseau RNSC Maps 2009 - 2014 (</b>
+
+- 7 Workshops (formation, réplication, conférences)
+- Publication fiche pédagogique (2015)
+
+etc.
+
+----
 
 <div class="centered">
 Survey de @Heath2009 <br/>
 <img src="presentation-images/validation_pourcentage_2009.png"  style="width: 70%;"/>
 </div>
 
-## Un objet de recherche 
+## Quel bénéfices ?
+
+Reflexion OSullivan, Rouchier 2013, Squazoni2010, etc.
+
+## Quels objets de recherche ?
+
+Le code source, reflet d'un processus de reflexion 
 
 <blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
 
