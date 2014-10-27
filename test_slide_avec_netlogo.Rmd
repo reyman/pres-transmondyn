@@ -6,17 +6,14 @@ output: ioslides_presentation
 runtime: shiny
 ---
 
-## Shiny Presentation
+## Graphique dynamique - Résumé
 
-This R Markdown presentation is made interactive using Shiny. The viewers of the presentation can change the assumptions underlying what's presented and see the results immediately. 
-
-To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
-
-## Slide with Interactive Plot (1)
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(RNetLogo)
 library(ggplot2)
+```
 
+```{r, echo=FALSE}
 currentUser <- as.list(Sys.info())$user
 currentSys <- as.list(Sys.info())$sysname
 if (currentUser  == "robin"){
@@ -32,7 +29,7 @@ if (currentUser  == "robin"){
   model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
 }
 
-NLStart(nlDir, gui = TRUE) # start NetLogo "headless"
+NLStart(nlDir, gui = FALSE) # start NetLogo "headless"
  
 NLLoadModel(model.path)
 
@@ -43,9 +40,12 @@ NLCommand('set migration-cost 80')
 NLCommand('set Migration-rule "Maximisation of ressource"')
 
 NLCommand("setup")
-results <- NLDoReportWhile("(any? groups) and (ticks < 1000)", "go",
-                c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
-                as.data.frame = TRUE, df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"))
+# Adapter le path de stockage selon le PC
+results <- NLDoReportWhile(condition = "(any? groups) and (ticks < 501)",
+                           command = 'if (ticks mod 10 = 0) [export-view (word "netlogo_img/" ticks ".png")] go',
+                           reporter = c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
+                           df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"),
+                           as.data.frame = TRUE)
 # Plot with ggplot2
 p <- ggplot(results)
 p + geom_line(aes(x=tick,y=Global_Density, colour = "red")) + 
@@ -54,6 +54,20 @@ p + geom_line(aes(x=tick,y=Global_Density, colour = "red")) +
   scale_colour_manual(name = 'Indicateurs', values =c('grey'='grey','red'='red','blue'='blue'), labels = c('Densité locale', "Nombre de groupes en vie", 'Densité globale')) + 
   ggtitle("ColoDyn results")
 NLQuit()
+```
+
+## Graphique dynamique - Détail
+```{r, echo=FALSE, }
+inputPanel({
+  sliderInput("tick", label = "Pas de temps",
+              min = 0, max = 500, value = 0, step = 10,
+              animate = animationOptions(interval = 100, loop=FALSE))
+})
+renderImage({
+# Adapter le path de stockage selon le PC
+    filename <- paste("netlogo_img/", input$tick, '.png', sep="")
+    list(src = filename)
+  }, deleteFile = FALSE)
 ```
 
 
