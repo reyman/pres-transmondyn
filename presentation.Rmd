@@ -133,9 +133,16 @@ Replicability, Reproductibility, Repeatability ?
 
 Deux conceptions différentes du termes
 
-<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication</mark> <mark>as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
 
-<blockquote>Computing independent replications in the NetLogo platform means initializing the seed of the pseudo-random number generator with different values prior to each run. -- @Reuillon2013</blockquote>
+<blockquote>Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
+
+----
+
+<div class="centered">
+Docking et Replication<br/>
+<img src="presentation-images/docking_replication_synthese.png"  style="width: 70%;"/>
+</div>
 
 ----
 
@@ -186,10 +193,6 @@ mtcars %>%
 
 ```
 
-## Vers des outils plus Polyglotte
-
-bla 
-
 ## Python reproductible 
 
 ```{r engine="python",echo=FALSE}
@@ -219,6 +222,13 @@ plt.savefig("somefilename.png")
 ```{r showfig,include=TRUE,echo=FALSE, results='asis'} 
 cat("![figure](./somefilename.png)")
 ```
+
+## Format et rendu 
+
+<div class="centered">
+<img src="presentation-images/capture_format.png"  style="width: 70%;"/>
+</div>
+
 
 # Simulation
 
