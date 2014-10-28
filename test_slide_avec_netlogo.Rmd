@@ -29,7 +29,7 @@ if (currentUser  == "robin"){
 	}
 } else {
   nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
-  model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
+  model.path <- "/home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/ColonDyn12.nlogo"
 }
 
 NLStart(nlDir, gui = TRUE) # start NetLogo "headless"
