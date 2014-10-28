@@ -103,10 +103,10 @@ bla
 
 <img src="presentation-images/ginsparg_paul.jpg" style="width:300px"; class = "author"/>
 
-<blockquote>In the fall of 1992, <mark>a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails </mark>-- Paul Ginsparg (2011) </blockquote>
+<blockquote>In the fall of 1992, <mark>a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails </mark>-- @Ginspard2011 </blockquote>
 
-<img src="presentation-images/arxiv.jpg" align="middle" style="width:400px"; class="author"/>
-<blockquote>Arxiv history quotation-- Paul Ginsparg (2011) </blockquote>
+<img src="presentation-images/arxiv.jpg" align="middle" style="width:200px"; class="author"/>
+<blockquote>Thus was born xxx.lanl.gov, [...] it was originally intended for about 100 submissions per year from a small subfield of high-energy particle physics, but rapidly grew in users and scope, receiving 400 submissions in its first half year.[...] <mark>Renamed in late 1998 to arXiv.org, it has accumulated roughly 700,000 total submissions [mid Aug 2011], currently receives 75,000 new submissions per year, and serves roughly one million full text downloads to about 400,000 distinct users per week. </mark> -- @Ginsparg2011 </blockquote>
 
 ## Les pionniers (Open Access)
 
@@ -329,11 +329,11 @@ R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisan
 
 Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe !
 
-## Ecosystèmes
+----
 
-- Machine virtuelle
-- Suivi et empaquetage de dépendance (packrat, etc.)
-- Workflows
+<div class="centered">
+<img src="presentation-images/slide_depot_code_source.png"  style="width: 110%;"/>
+</div>
 
 # References {.smaller}
 
