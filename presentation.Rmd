@@ -95,10 +95,6 @@ Pb #3 : Scandales <br/>
 
 <blockquote> Open source software is software that can be freely used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition. -- The Open Source Initiative 2014 </blockquote>
 
-## Les pionniers (Open Data)
-
-bla 
-
 ## Les pionniers (Open Access)
 
 <img src="presentation-images/ginsparg_paul.jpg" style="width:300px"; class = "author"/>
@@ -166,17 +162,15 @@ Un débat encore très actif sur les termes ... <br/>
 
 <q> Faire le point sur la réplication des modèles de simulations dans le contexte plus large des débats et <span class="red">des outils</span> proposés pour assurer une recherche reproductible</q>
 
-## Des idéaux
-
 <!---
 - Pour les journaux (BOAI, HowOpenIsIt, etc.)
 - Pour les institutions (Horizon2020, NSF 2014, Royal Society Science, etc.)
 - Pour les disciplines : Psychoterapy (James Coyne), 
---->
 
 - Pour les codes informatiques : 
   - Science Code Manifesto (Barnes 2011)
   - The recomputation manifesto (Gent, Ian P 2013)
+--->
 
 ## Des outils 
 
@@ -252,11 +246,11 @@ cat("![figure](./somefilename.png)")
 
 Plusieurs approches, et plusieurs termes
 
-<blockquote>Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+<blockquote><b>Replication (modelisateur):</b> Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
 
-<blockquote>This paper develops the concepts and methods of a process we will call <mark>"alignment of computational models" or "docking" for short</mark>. <mark>Alignment is needed to determine whether two models can produce the same results</mark>, which in turn is the basis for critical experiments and for tests of whether one model can subsume another. -- @Axtell1996</blockquote>
+<blockquote><b>Replication (informaticien)</b> Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
 
-<blockquote>Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
+<blockquote><b>Docking (modelisateur)</b> This paper develops the concepts and methods of a process we will call <mark>"alignment of computational models" or "docking" for short</mark>. <mark>Alignment is needed to determine whether two models can produce the same results</mark>, which in turn is the basis for critical experiments and for tests of whether one model can subsume another. -- @Axtell1996</blockquote>
 
 ----
 
@@ -264,7 +258,6 @@ Plusieurs approches, et plusieurs termes
 Docking et Replication<br/>
 <img src="presentation-images/docking_replication_synthese.png"  style="width: 70%;"/>
 </div>
-
 
 ## Un état des lieux des pratiques  
 
@@ -304,15 +297,13 @@ Survey de @Heath2009 <br/>
 
 ## Quel bénéfices ?
 
-- Vérification 
+- Vérification <br/>
+Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
 
-SLocal, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
-
-- Validation 
+- Validation <br/>
+<img src="presentation-images/validation_confrontation.png" />
 
 <!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
-
-<!--- OSullivan, Rouchier 2013, Squazoni2010, etc. --->
 
 ## Quels objets de recherche ?
 
@@ -320,22 +311,9 @@ Le code source, reflet d'un processus de reflexion
 
 <blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
 
-Deux niveaux à prendre en compte : 
-
-- Simulation(s) de modèle
-- Exploration(s) de simulation 
-
 ## Exemple avec RNetlogo 
 
 R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisant.
-
-## Quelles contraintes ?
-
-- déposer les données
-- déposer les codes sources
-- déposer le(s) papier(s) support des expériences
-
-Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe !
 
 ----
 
