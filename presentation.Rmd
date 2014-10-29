@@ -62,6 +62,9 @@ have to be cleared: <mark>the source code and test case data have to be availabl
 <div class="centered">
 
 Pb #3 : Scandales <br/>
+<div class="centered">
+
+<img src="presentation-images/slide_scandal.png"  style="width: 80%;"/>
 
 </div>
 
@@ -69,15 +72,26 @@ Pb #3 : Scandales <br/>
 
 ## l'Open Science
 
-<blockquote>Open science is the movement to make scientific research, data and dissemination accessible to all levels of an inquiring society, amateur or professional. It encompasses practices such as publishing open research, campaigning for open access, encouraging scientists to practice open notebook science, and generally making it easier to publish and communicate scientific knowledge. -- Wikipedia 2014 </blockquote>
-
-<blockquote> a) Transparency in experimental methodology, observation, and collection of data. b) Public availability and reusability of scientific data. c) Public accessibility and transparency of scientific communication. d) Using web-based tools to facilitate scientific collaboration. http://www.openscience.org </blockquote>
+<div class="centered">
+  <img src="presentation-images/nuage_openscience.jpg"  style="width: 80%;"/>
+</div>
 
 ## l'Open Science
 
-<img src="presentation-images/openscience_pointofview.png"  style="width: 70%;"/>
+<span class="red"><b>Open Data, Open Access, Open Code, Open Notebook, etc.</b></span>
 
+<blockquote><mark>Open science is the movement </mark>to make scientific research, data and dissemination accessible to all levels of an inquiring society, amateur or professional. It encompasses practices such as <mark>publishing open research, campaigning for open access, encouraging scientists to practice open notebook science, and generally making it easier to publish and communicate scientific knowledge.</mark> -- Wikipedia 2014 </blockquote>
+
+<blockquote> a) Transparency in experimental methodology, observation, and collection of data. b) Public availability and reusability of scientific data. c) Public accessibility and transparency of scientific communication. d) Using web-based tools to facilitate scientific collaboration. -- http://www.openscience.org </blockquote>
+
+
+## l'Open Science
+
+<img src="presentation-images/openscience_pointofview.png"  style="width: 80%;"/>
+
+<!---
 <blockquote>The infrastructure school (which is concerned with the technological architecture), the public school (which is concerned with the accessibility of knowledge creation), the “measurement school”(which is concerned with alternative impact measurement), the “democratic school”(which is concerned with access to knowledge) and the “pragmatic school” (which is concerned with collaborative research). -- http://book.openingscience.org 2014 </blockquote>
+--->
 
 ## Les pionniers (WWW)
 
@@ -140,23 +154,27 @@ Pb #3 : Scandales <br/>
 
 ## Les précurseurs
 
-<blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) @Goble2012</blockquote>
+<blockquote><mark>An article about computational science</mark> in a scientific publication <mark>is not the scholarship itself, it is merely advertising of the scholarship.</mark> The actual scholarship is the complete software development environment, the complete data and the complete set of instructions which generated the figures. David Donoho (1995) -- @Goble2012</blockquote>
 
 <blockquote>A revolution in education and technology transfer follows from the <mark>marriage of word processing and software command scripts</mark>. In this marriage <mark>an author attaches to every figure caption a pushbutton or a name tag usable to recalculate the figure from all its data, parameters, and programs. This provides a concrete definition of reproducibility in computationally oriented research.</mark> -- @Claerbout1992 </mark></blockquote>
 
 ----
 
-Un débat sur les termes : <b>Replicability, Reproductibility, Repeatability ?</b>
-
-<blockquote> We can reserve the term <mark>Replicability for the regeneration of published results from author-provided code and data.</mark> [...] <mark>Reproducibility is a more general term, implying both replication and the regeneration of findings with at least some independence from the code and/or data associated with the original publication.</mark> Both refer to the analysis that occurs after publication. A third term, <mark>Repeatability</mark>, is sometimes used in place of reproducibility, but this <mark>is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken.</mark> -- <b>Victoria Stodden 2011</b></blockquote>
+<q> Faire le point sur <span class="red">la réplication</span> des modèles de simulations  dans le contexte plus large des débats et des outils proposés pour assurer une recherche reproductible</q>
 
 ----
 
-Un débat encore très actif sur les termes ... <br/>
+<b>Replicability, Reproductibility, Repeatability ?</b>
 
-@Gent2013, auteur du "Recomputation Manifesto" <br/> <span class="red"><b> Vs </b> </span> <br/> @Drummond2009
+<blockquote> We can reserve the term <span class="red">Replicability for the regeneration of published results from author-provided code and data.</span> [...] <span class="green">Reproducibility is a more general term, implying both replication and the regeneration of findings with at least some independence from the code and/or data associated with the original publication.</span> Both refer to the analysis that occurs after publication. A third term, <span class="blue">Repeatability</span>, is sometimes used in place of reproducibility, but this <span class="blue">is more typically used as a term of art referring to the sensitivity of results when underlying measurements are retaken.</span> -- Victoria Stodden 2011</blockquote>
 
-<blockquote>Drummond argues powerfully that this - which he calls ‘replicability’ - is the poor cousin of ‘reproducibility’, where experiments are reproduced with changes to factors believed to be insignificant. There is no question that key advances in science should be reproducible in Drummond’s richer sense, but neither do I accept that “the impoverished version, replicability, is one not worth having” -- @Gent2013 </blockquote>
+----
+
+<span class="red">Un débat encore très actif sur les termes ... voir par exemple </span>
+
+@Gent2013, auteur du <b>"Recomputation Manifesto"</b> <br/> <span class="red"><b> VS </b> </span> <br/> @Drummond2009
+
+<blockquote>Drummond argues powerfully that this - which he calls <mark>‘replicability’ - is the poor cousin of ‘reproducibility’</mark>, where experiments are reproduced with changes to factors believed to be insignificant. <span class ="red">There is no question that key advances in science should be reproducible in Drummond’s richer sense,  but neither do I accept that “the impoverished version, replicability, is one not worth having”</span>  -- @Gent2013 </blockquote>
 
 ----
 
@@ -176,7 +194,7 @@ Un débat encore très actif sur les termes ... <br/>
 
 - Des communautées > des outils > des <span color ="red"> innovations </span>
 
-- Un support d'échange privilégié, le navigateur internet
+- Un support d'échange privilégié, <span class="red">le navigateur internet</span>
 
 - Une multiplicité d'outils
   - Ecriture collaborative 
@@ -246,11 +264,11 @@ cat("![figure](./somefilename.png)")
 
 Plusieurs approches, et plusieurs termes
 
-<blockquote><b>Replication (modelisateur):</b> Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
+<blockquote><span class = "red"><b>Replication (modelisateur):</b></span> Though many conceptions of replication may exist, for the purposes of this paper, we will define <mark>replication as the implementation (replicated model)</mark> by one scientist or group of scientists (model replicaters) <mark> of a conceptual model described and already implemented (original model) </mark> by a scientist or group of scientists <mark>at a previous time (model builders).</mark> -- @Wilensky2007a</blockquote>
 
-<blockquote><b>Replication (informaticien)</b> Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
+<blockquote><span class = "green"><b>Replication (informaticien)</b></span> Computing independent <mark>replications</mark> in the NetLogo platform <mark>means initializing the seed of the pseudo-random number generator with different values prior to each run</mark>. -- @Reuillon2013</blockquote>
 
-<blockquote><b>Docking (modelisateur)</b> This paper develops the concepts and methods of a process we will call <mark>"alignment of computational models" or "docking" for short</mark>. <mark>Alignment is needed to determine whether two models can produce the same results</mark>, which in turn is the basis for critical experiments and for tests of whether one model can subsume another. -- @Axtell1996</blockquote>
+<blockquote><span class = "blue"><b>Docking (modelisateur)</b></span> This paper develops the concepts and methods of a process we will call <mark>"alignment of computational models" or "docking" for short</mark>. <mark>Alignment is needed to determine whether two models can produce the same results</mark>, which in turn is the basis for critical experiments and for tests of whether one model can subsume another. -- @Axtell1996</blockquote>
 
 ----
 
@@ -258,6 +276,37 @@ Plusieurs approches, et plusieurs termes
 Docking et Replication<br/>
 <img src="presentation-images/docking_replication_synthese.png"  style="width: 70%;"/>
 </div>
+
+## Quel bénéfices ?
+
+- Vérification <br/>
+Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
+
+- Validation <br/>
+<img src="presentation-images/validation_confrontation.png" />
+
+<!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
+
+## Quel bénéfices ?
+
+<span class="red"> 1 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="red">plus vite il est échangé, discuté, modifié, et répliqué </span> par la communauté d'origine, mais également les autres communautés.
+ 
+<span class="green"> 2 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="green"> plus vite il est adaptable, dérivable par d'autres communautés.</span>
+ 
+<span class="blue"> 3 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="blue"> plus vite </span> il est identifié comme un objet de recherche à part entière.</span>
+
+## Quels objets de recherche ?
+
+Le code source, reflet d'une construction intellectuelle sur le temps long.
+
+<blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
+
+----
+
+<div class="centered">
+<img src="presentation-images/synthese_voyage.png"  style="width: 110%;"/>
+</div>
+
 
 ## Un état des lieux des pratiques  
 
@@ -273,15 +322,15 @@ Docking et Replication<br/>
 Liens : http://cfpm.org/m2m/, http://www.insisoc.org/ESSA04/M2M2.htm, http://m2m2007.hutton.ac.uk/m2m_programme.html
 --->
 
-<b> a) Model-to-Model series of workshops 2003 - 2008 </b>
+<b> <span class="green">Model-to-Model(M2M)</span> (2003 - 2008) </b>
 
-- M2M-1 @Hales2003 <span class="green">(Marseille 2003)</span>
-- M2M-2 <span class="green">(Valladolid 2004)</span>
-- M2M-3 @Rouchier2008 <span class="green">(Marseille 2007)</span>
+- M2M-1 @Hales2003 (Marseille 2003)
+- M2M-2 (Valladolid 2004)
+- M2M-3 @Rouchier2008 (Marseille 2007)
 
-=> <span class = "red">mais fin des workshop ... </span> selon @Rouchier2013
+=> <b>mais fin des workshop après M2M-3... </b> selon @Rouchier2013
 
-<b> b) Réseau RNSC Maps 2009 - 2014 </b>
+<b> <span class="blue"> Réseau RNSC MAPS  (2009 - 2014) </span> </b>
 
 - 7 Workshops (formation, réplication, conférences)
 - Publication fiche pédagogique (2015)
@@ -295,25 +344,10 @@ Survey de @Heath2009 <br/>
 <img src="presentation-images/validation_pourcentage_2009.png"  style="width: 70%;"/>
 </div>
 
-## Quel bénéfices ?
+## Deux solutions de dépôt pour NETLOGO
 
-- Vérification <br/>
-Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
-
-- Validation <br/>
-<img src="presentation-images/validation_confrontation.png" />
-
-<!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
-
-## Quels objets de recherche ?
-
-Le code source, reflet d'un processus de reflexion 
-
-<blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
-
-## Exemple avec RNetlogo 
-
-R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisant.
+- dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
+- dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons) 
 
 ----
 
@@ -326,6 +360,12 @@ R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisan
 <div class="centered">
 <img src="presentation-images/image_code_source_zenodo.png"  style="width: 110%;"/>
 </div>
+
+----
+
+## Exemple de papier reproductible avec NetLogo
+
+R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisant.
 
 ----
 
