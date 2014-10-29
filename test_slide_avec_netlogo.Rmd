@@ -5,69 +5,101 @@ date: "22/10/2014"
 output: ioslides_presentation
 runtime: shiny
 ---
+## Graphique dynamique - Détail
 
-## Graphique dynamique - Résumé
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, echo = FALSE, message=FALSE}
 library(RNetLogo)
-library(ggplot2)
-```
+  library(ggplot2)
+  currentUser <- as.list(Sys.info())$user
+  currentSys <- as.list(Sys.info())$sysname
+    if (currentUser  == "robin"){
+      if (currentSys == "Windows"){
+        nlDir <- "C:\\Program Files (x86)\\NetLogo 5.0.4\\"
+    		model.path <- "D:\\repositories\\pres-transmondyn\\ColonDyn12.nlogo"
+    	} else {
+    		nlDir <- "/home/robin/Downloads/netlogo-5.0.5/"
+    		model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
+    	}
+    } else {
+      nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
+      model.path <- "/home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/ColonDyn12.nlogo"
+    }
 
-```{r, echo=FALSE}
-currentUser <- as.list(Sys.info())$user
-currentSys <- as.list(Sys.info())$sysname
-if (currentUser  == "robin"){
-	if (currentSys == "Windows"){
-		nlDir <- "C:\\Program Files (x86)\\NetLogo 5.0.4\\"
-		model.path <- "D:\\repositories\\pres-transmondyn\\ColonDyn12.nlogo"
-	} else {
-		nlDir <- "/home/robin/Downloads/netlogo-5.0.5/"
-		model.path <- "/data/repositories/pres-transmondyn/ColonDyn12.nlogo"
-	}
-} else {
-  nlDir <- "/home/srey/Binaire/netlogo-5.0.4/"
-  model.path <- "/home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/ColonDyn12.nlogo"
+runNetLogo <- function(){
+  NLStart(nlDir, gui = FALSE) # start NetLogo "headless"
+  NLLoadModel(model.path)
+
+  NLCommand('set Resource_Landscape "Homogeneous"')
+  NLCommand('set Ressource-regeneration 3')
+  NLCommand('set human-pressure-on-ecology 89')
+  NLCommand('set migration-cost 90')
+  NLCommand('set Migration-rule "Minimisation of distance and competition"')
+  NLCommand("setup")
+  NLCommand('random-seed 100')
+  # Adapter le path de stockage selon le PC
+  results <- NLDoReportWhile(condition = "(any? groups) and (ticks < 501)",
+                             command = 'if (ticks mod 10 = 0) [export-view (word "netlogo_img/" ticks ".png")] go',
+                             reporter = c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
+                             df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"),
+                             as.data.frame = TRUE)
+  NLQuit()
+  return(results)
 }
 
-NLStart(nlDir, gui = FALSE) # start NetLogo "headless"
- 
-NLLoadModel(model.path)
+```
 
-NLCommand('set Resource_Landscape "U-turn"')
-NLCommand('set Ressource-regeneration 1')
-NLCommand('set human-pressure-on-ecology 150')
-NLCommand('set migration-cost 80')
-NLCommand('set Migration-rule "Maximisation of ressource"')
-
-NLCommand("setup")
-# Adapter le path de stockage selon le PC
-results <- NLDoReportWhile(condition = "(any? groups) and (ticks < 501)",
-                           command = 'if (ticks mod 10 = 0) [export-view (word "netlogo_img/" ticks ".png")] go',
-                           reporter = c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
-                           df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"),
-                           as.data.frame = TRUE)
-# Plot with ggplot2
-p <- ggplot(results)
-p + geom_line(aes(x=tick,y=Global_Density, colour = "red")) + 
-  geom_line(aes(x=tick,y=Local_Density, colour = "blue")) + 
-  geom_line(aes(x=tick,y=Number_of_Groups, colour = "grey")) + 
-  scale_colour_manual(name = 'Indicateurs', values =c('grey'='grey','red'='red','blue'='blue'), labels = c('Densité locale', "Nombre de groupes en vie", 'Densité globale')) + 
-  ggtitle("ColoDyn results")
-NLQuit()
+```{r, echo = FALSE}
+shinyApp(
+  ui = fluidPage(
+    actionButton(inputId = "runModel",label = "Executer le modèle"),
+    plotOutput("globalPlot")
+  ),
+  
+  server = function(input, output) {
+    
+    NLresults <- reactive({
+      if (input$runModel > 0){
+         NLresults <- runNetLogo()
+         }
+    })
+    
+    output$globalPlot <- renderPlot({
+      myData <-NLresults()
+      if (!is.null(myData)){
+    p <- ggplot(myData)
+    p + geom_line(aes(x=tick,y=Global_Density, colour = "red")) + 
+    geom_line(aes(x=tick,y=Local_Density, colour = "blue")) + 
+    geom_line(aes(x=tick,y=Number_of_Groups, colour = "grey")) + 
+    scale_colour_manual(name = 'Indicateurs',
+                        values=c('grey'='grey','red'='red','blue'='blue'),
+                        labels = c('Densité locale', "Nombre de groupes en vie", 'Densité globale')) + 
+    ggtitle("ColoDyn results")
+          } else {
+            return()
+          }
+    })
+  },
+  options = list(height = 500)
+)
 ```
 
 ## Graphique dynamique - Détail
-```{r, echo=FALSE, }
-inputPanel({
-  sliderInput("tick", label = "Pas de temps",
+
+```{r, echo = FALSE}
+shinyApp(
+  ui = fluidPage(
+    sliderInput("tick", label = "Pas de temps",
               min = 0, max = 500, value = 0, step = 10,
-              animate = animationOptions(interval = 100, loop=FALSE))
-})
-renderImage({
-# Adapter le path de stockage selon le PC
+              animate = animationOptions(interval = 100, loop=FALSE)),
+    imageOutput("worldview")
+  ),
+  
+  server = function(input, output) {
+    output$worldview <- renderImage({
     filename <- paste("netlogo_img/", input$tick, '.png', sep="")
-    list(src = filename)
-  }, deleteFile = FALSE)
+    list(src = filename, height=350, contentType = 'image/png')
+    }, deleteFile = FALSE)
+  },
+  options = list(height = 500)
+)
 ```
-
-
