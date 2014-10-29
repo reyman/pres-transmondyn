@@ -28,12 +28,14 @@ library(RNetLogo)
 runNetLogo <- function(){
   NLStart(nlDir, gui = FALSE) # start NetLogo "headless"
   NLLoadModel(model.path)
-  NLCommand('set Resource_Landscape "U-turn"')
-  NLCommand('set Ressource-regeneration 1')
-  NLCommand('set human-pressure-on-ecology 150')
-  NLCommand('set migration-cost 80')
-  NLCommand('set Migration-rule "Maximisation of ressource"')
+
+  NLCommand('set Resource_Landscape "Homogeneous"')
+  NLCommand('set Ressource-regeneration 3')
+  NLCommand('set human-pressure-on-ecology 89')
+  NLCommand('set migration-cost 90')
+  NLCommand('set Migration-rule "Minimisation of distance and competition"')
   NLCommand("setup")
+  NLCommand('random-seed 100')
   # Adapter le path de stockage selon le PC
   results <- NLDoReportWhile(condition = "(any? groups) and (ticks < 501)",
                              command = 'if (ticks mod 10 = 0) [export-view (word "netlogo_img/" ticks ".png")] go',
