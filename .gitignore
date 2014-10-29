@@ -4,4 +4,4 @@
 *.bib
 packrat/lib*/
 packrat/src/
-netlogo_img/*
+netlogo_img/.
