@@ -304,7 +304,15 @@ Survey de @Heath2009 <br/>
 
 ## Quel bénéfices ?
 
-Reflexion OSullivan, Rouchier 2013, Squazoni2010, etc.
+- Vérification 
+
+SLocal, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
+
+- Validation 
+
+<!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
+
+<!--- OSullivan, Rouchier 2013, Squazoni2010, etc. --->
 
 ## Quels objets de recherche ?
 
@@ -334,6 +342,15 @@ Est ce suffisant ? => Non, en réalité le problème est beaucoup plus complexe 
 <div class="centered">
 <img src="presentation-images/slide_depot_code_source.png"  style="width: 110%;"/>
 </div>
+
+----
+
+<div class="centered">
+<img src="presentation-images/image_code_source_zenodo.png"  style="width: 110%;"/>
+</div>
+
+----
+
 
 # References {.smaller}
 
