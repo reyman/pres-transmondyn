@@ -289,25 +289,17 @@ Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évalua
 
 <!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
 
-## Quel bénéfices ?
+----
 
-<span class="red"> 1 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="red">plus vite il est échangé, discuté, modifié, et répliqué </span> par la communauté d'origine, mais également les autres communautés.
- 
-<span class="green"> 2 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="green"> plus vite il est adaptable, dérivable par d'autres communautés.</span>
- 
-<span class="blue"> 3 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="blue"> plus vite </span> il est identifié comme un objet de recherche à part entière.</span>
+<div class="centered">
+<img src="presentation-images/synthese_voyage.png"  style="width: 110%;"/>
+</div>
 
 ## Quels objets de recherche ?
 
 Le code source, reflet d'une construction intellectuelle sur le temps long.
 
 <blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
-
-----
-
-<div class="centered">
-<img src="presentation-images/synthese_voyage.png"  style="width: 110%;"/>
-</div>
 
 
 ## Un état des lieux des pratiques  
@@ -317,6 +309,13 @@ Le code source, reflet d'une construction intellectuelle sur le temps long.
 <blockquote>However, <mark>despite this plethora of interesting models, they are rarely compared, built-on or transferred between researchers.</mark> It would seem there is a dearth of "model-to-model" analysis.<mark> Rather researchers tend to work in isolation, designing all their models from scratch and reporting their results without anyone else reproducing what they found. </mark> -- @Hales2003 </blockquote>
 
 <blockquote>Recent years have seen a proliferation of agent-based models in the natural and social sciences. <mark>But with the exception of a few "classic" models, most of these models have never been replicated by anyone but the original developer.</mark> -- @Wilensky2007a</blockquote>
+
+----
+
+<div class="centered">
+Survey de @Heath2009 <br/>
+<img src="presentation-images/validation_pourcentage_2009.png"  style="width: 70%;"/>
+</div>
 
 ## Un état des lieux des pratiques  
 
@@ -338,18 +337,6 @@ Liens : http://cfpm.org/m2m/, http://www.insisoc.org/ESSA04/M2M2.htm, http://m2m
 - Publication fiche pédagogique (2015)
 
 etc.
-
-----
-
-<div class="centered">
-Survey de @Heath2009 <br/>
-<img src="presentation-images/validation_pourcentage_2009.png"  style="width: 70%;"/>
-</div>
-
-## Deux solutions de dépôt pour NETLOGO
-
-- dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
-- dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons) 
 
 
 ## Exemple avec RNetlogo 
@@ -384,7 +371,7 @@ runNetLogo <- function(){
   NLCommand("setup")
   NLCommand('random-seed 100')
   # Adapter le path de stockage selon le PC
-  results <- NLDoReportWhile(condition = "(any? groups) and (ticks < 501)",
+  results <- NLDoReportWhile(condition = "ticks < 501",
                              command = 'if (ticks mod 10 = 0) [export-view (word "netlogo_img/" ticks ".png")] go',
                              reporter = c("ticks", "globaldensity", "meanlocaldensity", "count groups"),
                              df.col.names = c("tick", "Global_Density", "Local_Density", "Number_of_Groups"),
@@ -451,7 +438,12 @@ shinyApp(
   options = list(height = 500)
 )
 ```
->>>>>>> c3fe303e1adfa8d2e58d569e9c58b3cae274ff5b
+
+
+## Deux solutions de dépôt pour NETLOGO
+
+- dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
+- dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons) 
 
 ----
 
@@ -465,14 +457,22 @@ shinyApp(
 <img src="presentation-images/image_code_source_zenodo.png"  style="width: 110%;"/>
 </div>
 
-----
+## Quel bénéfices ?
 
-## Exemple de papier reproductible avec NetLogo
+<span class="red"> 1 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="red">plus vite il est échangé, discuté, modifié, et répliqué </span> par la communauté d'origine, mais également les autres communautés.
+ 
+<span class="green"> 2 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="green"> plus vite il est adaptable, dérivable par d'autres communautés.</span>
+ 
+<span class="blue"> 3 - Plus vite </span> le code source du modèle est disponible, <br/> <span class="blue"> plus vite </span> il est identifié comme un objet de recherche à part entière.</span>
 
-R Netlogo, un outil puissant pour générer des rapports dynamique auto-suffisant.
+## Dépots 
 
-----
-
+- Dépot de la présentation : http://github.com/reyman/pres-transmondyn
+- Site web avec ressources (bibliographie, liste de projets open science) : http://transmondyn.sebastienreycoyrehourcq.fr
+- Exemple de papier reproductible en simulation  
+  - <b> SimpopLocal @Schmitt2014</b> : https://github.com/ISCPIF/simpoplocal-epb
+  - <b> Cholera (Crooks et al. 2014)</b> : http://css.gmu.edu/Cholera/
+  
 
 # References {.smaller}
 
