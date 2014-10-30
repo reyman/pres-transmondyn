@@ -9,10 +9,10 @@ output:
 runtime: shiny
 font-import: http://fonts.googleapis.com/css?family=Ubuntu
 font-family: Ubuntu
-#bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
-#csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
-bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
-csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
+bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
+csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
+#bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
+#csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
 widescreen: yes
 ---
 
