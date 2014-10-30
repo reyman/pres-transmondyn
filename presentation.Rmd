@@ -9,10 +9,10 @@ output:
 runtime: shiny
 font-import: http://fonts.googleapis.com/css?family=Ubuntu
 font-family: Ubuntu
-#bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
-#csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
-bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
-csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
+bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
+csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
+# bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
+# csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
 widescreen: yes
 ---
 
@@ -65,9 +65,7 @@ have to be cleared: <mark>the source code and test case data have to be availabl
 
 Pb #3 : Scandales <br/>
 <div class="centered">
-
 <img src="presentation-images/slide_scandal.png"  style="width: 80%;"/>
-
 </div>
 
 # L'organisation collective d'une réponse
@@ -85,7 +83,6 @@ Pb #3 : Scandales <br/>
 <blockquote><mark>Open science is the movement </mark>to make scientific research, data and dissemination accessible to all levels of an inquiring society, amateur or professional. It encompasses practices such as <mark>publishing open research, campaigning for open access, encouraging scientists to practice open notebook science, and generally making it easier to publish and communicate scientific knowledge.</mark> -- Wikipedia 2014 </blockquote>
 
 <blockquote> a) Transparency in experimental methodology, observation, and collection of data. b) Public availability and reusability of scientific data. c) Public accessibility and transparency of scientific communication. d) Using web-based tools to facilitate scientific collaboration. -- http://www.openscience.org </blockquote>
-
 
 ----
 
@@ -115,10 +112,10 @@ Pb #3 : Scandales <br/>
 
 <img src="presentation-images/ginsparg_paul.jpg" style="width:300px"; class = "author"/>
 
-<blockquote>In the fall of 1992, <mark>a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails </mark>-- @Ginspard2011 </blockquote>
+<blockquote>In the fall of 1992, <mark>a colleague at CERN emailed me: ‘Q: do you know the worldwide-web program?’ I did not, but quickly installed WorldWideWeb.app, serendipitously written by Tim Berners-Lee for the same NeXT computer that I was using, and with whom I began to exchange emails </mark>-- Paul Ginspard 2011 </blockquote>
 
 <img src="presentation-images/arxiv.jpg" align="middle" style="width:200px"; class="author"/>
-<blockquote>Thus was born xxx.lanl.gov, [...] it was originally intended for about 100 submissions per year from a small subfield of high-energy particle physics, but rapidly grew in users and scope, receiving 400 submissions in its first half year.[...] <mark>Renamed in late 1998 to arXiv.org, it has accumulated roughly 700,000 total submissions [mid Aug 2011], currently receives 75,000 new submissions per year, and serves roughly one million full text downloads to about 400,000 distinct users per week. </mark> -- @Ginsparg2011 </blockquote>
+<blockquote>Thus was born xxx.lanl.gov, [...] it was originally intended for about 100 submissions per year from a small subfield of high-energy particle physics, but rapidly grew in users and scope, receiving 400 submissions in its first half year.[...] <mark>Renamed in late 1998 to arXiv.org, it has accumulated roughly 700,000 total submissions [mid Aug 2011], currently receives 75,000 new submissions per year, and serves roughly one million full text downloads to about 400,000 distinct users per week. </mark> -- Paul Ginsparg 2011 </blockquote>
 
 ## Les pionniers (Open Access)
 
@@ -283,13 +280,20 @@ Docking et Replication<br/>
 
 ## Quel bénéfices ?
 
-- Vérification <br/>
-Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article @Schmitt2014)
+<b><span class="red">- Une aide à la Vérification, pourquoi ? </span></b>
 
-- Validation <br/>
-<img src="presentation-images/validation_confrontation.png" />
+Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évaluation,  des millions d'executions pour calibrer, une réplication de netlogo vers scala, et toujours des bugs (voir article  Schmitt 2014)
 
-<!--- @Sullivan2004 Monde idéal de l'évaluation, il reste quoi ? Cela n'enleve pas la possibilité d'obtenir des modeles différents aboutissant au meme pattern, la richesse du patrimoine est donc dans la confrontation --->
+<b><span class="red">- Un préalable nécessaire à la Validation, pourquoi ? <span/></b>
+
+<img src="presentation-images/validation_confrontation.png" style="width: 100%";/>
+
+
+## Quel objet support de la réplication ?
+
+<blockquote> Pour @Langlois2005 <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
+
+Le code source, un objet de recherche reflet d'une construction intellectuelle sur le temps long.
 
 ----
 
@@ -297,11 +301,17 @@ Simpop Local, 3 années de développements, 4 mécanismes, 3 critères d'évalua
 <img src="presentation-images/synthese_voyage.png"  style="width: 110%;"/>
 </div>
 
-## Quels objets de recherche ?
+----
 
-Le code source, reflet d'une construction intellectuelle sur le temps long.
+<div class="centered">
+<img src="presentation-images/image_clementine.png"  style="width: 60%;"/>
+</div>
 
-<blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
+-----
+
+<div class="centered">
+<img src="presentation-images/Sélection_700.png"  style="width: 90%;"/>
+</div>
 
 ## Quelle ouverture pour les modèles ?
 
@@ -449,10 +459,16 @@ shinyApp(
 
 ## Deux solutions de dépôt pour NetLogo
 
-- dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
-- dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons) 
+- dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons, etc.) 
+
+<div class="centered">
+<img src="presentation-images/openABM.jpg"  style="width: 70%;"/>
+</div>
+
 
 ----
+
+- dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
 
 <div class="centered">
 <img src="presentation-images/slide_depot_code_source.png"  style="width: 110%;"/>
@@ -478,9 +494,8 @@ shinyApp(
 - Dépot de la présentation : http://github.com/reyman/pres-transmondyn
 - Site web avec ressources (bibliographie, liste de projets open science) : http://transmondyn.sebastienreycoyrehourcq.fr
 - Exemple de papier reproductible en simulation  
-  - <b> SimpopLocal @Schmitt2014</b> : https://github.com/ISCPIF/simpoplocal-epb
+  - <b> SimpopLocal (Schmitt et al. 2014)</b> : https://github.com/ISCPIF/simpoplocal-epb
   - <b> Cholera (Crooks et al. 2014)</b> : http://css.gmu.edu/Cholera/
   
-
 # References {.smaller}
 
