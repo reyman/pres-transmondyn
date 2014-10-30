@@ -9,10 +9,10 @@ output:
 runtime: shiny
 font-import: http://fonts.googleapis.com/css?family=Ubuntu
 font-family: Ubuntu
-bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
-csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
-#bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
-#csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
+#bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
+#csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
+bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
+csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
 widescreen: yes
 ---
 
@@ -203,9 +203,17 @@ Pb #3 : Scandales <br/>
 
 ## R interactif 
 
-<!-- TODO -->
-ggvis ou shiny
+```{r, echo = FALSE}
+sliderInput("bins", "Nombre de classes:", min = 1, max = 50, value = 30)
 
+renderPlot({
+  x <- faithful[, 2]  # Old Faithful Geyser data
+  bins <- seq(min(x), max(x), length.out = input$bins + 1)
+
+  # draw the histogram with the specified number of bins
+  hist(x, breaks = bins, col = 'darkgray', border = 'white', main = "Histogramme", ylab = "Fréquence")
+})
+```
 
 ## Python reproductible 
 
@@ -339,7 +347,7 @@ etc.
 
 
 ## Exemple avec RNetlogo 
-Charger un modèle, le paramétrer, l'executer, et en afficher des résultats réplicables.
+Charger un modèle, le paramétrer, l'exécuter, et en afficher des résultats réplicables.
 
 ```{r, echo = FALSE, message=FALSE}
 library(RNetLogo)
