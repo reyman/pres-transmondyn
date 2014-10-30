@@ -310,7 +310,7 @@ Le code source, un objet de recherche reflet d'une construction intellectuelle s
 -----
 
 <div class="centered">
-<img src="presentation-images/Sélection_700.png"  style="width: 90%;"/>
+<img src="presentation-images/Selection_700.png"  style="width: 90%;"/>
 </div>
 
 ## Quelle ouverture pour les modèles ?
