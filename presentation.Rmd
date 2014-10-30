@@ -87,7 +87,7 @@ Pb #3 : Scandales <br/>
 <blockquote> a) Transparency in experimental methodology, observation, and collection of data. b) Public availability and reusability of scientific data. c) Public accessibility and transparency of scientific communication. d) Using web-based tools to facilitate scientific collaboration. -- http://www.openscience.org </blockquote>
 
 
-## l'Open Science
+----
 
 <img src="presentation-images/openscience_pointofview.png"  style="width: 80%;"/>
 
