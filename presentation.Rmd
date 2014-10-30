@@ -9,10 +9,10 @@ output:
 runtime: shiny
 font-import: http://fonts.googleapis.com/css?family=Ubuntu
 font-family: Ubuntu
-bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
-csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
-#bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
-#csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
+#bibliography: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/transmondyn.bib
+#csl: /home/srey/TRAVAUX/THESE/REPOSITORY_GIT/presentations/transmondyn_28102014/annals-of-the-association-of-american-geographers.csl
+bibliography: /data/repositories/pres-transmondyn/transmondyn.bib
+csl: /data/repositories/pres-transmondyn/annals-of-the-association-of-american-geographers.csl
 widescreen: yes
 ---
 
@@ -194,24 +194,26 @@ Pb #3 : Scandales <br/>
 
 ## Des outils 
 
-- Des communautées > des outils > des <span color ="red"> innovations </span>
-
-- Un support d'échange privilégié, <span class="red">le navigateur internet</span>
-
-- Une multiplicité d'outils
-  - Ecriture collaborative 
-  - Dissimination (papiers, données, codes sources)
-  
-- Des langages clef
-  - R (Sweave, Knitr, Rmarkdown)
-  - Python (Ipython)
+<div class="centered">
+<img src="presentation-images/outils_openscience.png"  style="width: 100%;"/>
+</div>
 
 # L'exemple des papier dynamiques avec R
 
+
 ## R interactif 
 
-ggvis ou shiny
+```{r, echo = FALSE}
+sliderInput("bins", "Nombre de classes:", min = 1, max = 50, value = 30)
 
+renderPlot({
+  x <- faithful[, 2]  # Old Faithful Geyser data
+  bins <- seq(min(x), max(x), length.out = input$bins + 1)
+
+  # draw the histogram with the specified number of bins
+  hist(x, breaks = bins, col = 'darkgray', border = 'white', main = "Histogramme", ylab = "Fréquence")
+})
+```
 
 ## Python reproductible 
 
@@ -301,6 +303,11 @@ Le code source, reflet d'une construction intellectuelle sur le temps long.
 
 <blockquote> Pour @Langlois2005  <mark>Le terme de modélisation désigne à la fois l'activité pour produire un modèle et le résultat de cette activité.</mark> Le concept de modélisation est donc <mark>[...] plus large que celui de modèle, car il recouvre l'activité humaine qui aboutit au modèle achevé, alors que le modèle est un objet (concret ou abstrait), volontairement dépouillé de l'activité qui l'a créé.</mark> </blockquote>
 
+## Quelle ouverture pour les modèles ?
+
+<div class="centered">
+<img src="presentation-images/etapes_modele_reproductible.png"  style="height: 92%;"/>
+</div>
 
 ## Un état des lieux des pratiques  
 
@@ -340,7 +347,7 @@ etc.
 
 
 ## Exemple avec RNetlogo 
-Charger un modèle, le paramétrer, l'executer, et en afficher des résultats réplicables.
+Charger un modèle, le paramétrer, l'exécuter, et en afficher des résultats réplicables.
 
 ```{r, echo = FALSE, message=FALSE}
 library(RNetLogo)
@@ -440,7 +447,7 @@ shinyApp(
 ```
 
 
-## Deux solutions de dépôt pour NETLOGO
+## Deux solutions de dépôt pour NetLogo
 
 - dépot code générique, non executable en ligne, mais <span class="red"> avec DOI </span>
 - dépot code netlogo, executable en ligne, mais <span class="red"> sans DOI </span> (openABM, modellingCommons) 
@@ -456,6 +463,7 @@ shinyApp(
 <div class="centered">
 <img src="presentation-images/image_code_source_zenodo.png"  style="width: 110%;"/>
 </div>
+
 
 ## Quel bénéfices ?
 
